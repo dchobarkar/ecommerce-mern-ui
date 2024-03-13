@@ -11,10 +11,10 @@ const Info = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
   opacity: 0;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.2);
@@ -25,8 +25,8 @@ const Container = styled.div`
   flex: 1;
   min-width: 280px;
   height: 350px;
-  position: relative;
   margin: 5px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

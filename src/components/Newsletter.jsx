@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { Send } from "@material-ui/icons";
 
+import { mobile } from "../responsive";
+
 const Container = styled.div`
   height: 60vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #fcf5f5;
 `;
 const Title = styled.h1`
@@ -18,6 +20,7 @@ const Desc = styled.div`
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 300;
+  ${mobile({ textAlign: "center" })}
 `;
 
 const InputContainer = styled.div`
@@ -25,8 +28,9 @@ const InputContainer = styled.div`
   height: 40px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
   border: 1px solid lightgray;
+  background-color: white;
+  ${mobile({ width: "80%" })}
 `;
 
 const Input = styled.input`
@@ -46,6 +50,7 @@ const Newsletter = () => {
   return (
     <Container>
       <Title>Newsletter</Title>
+
       <Desc>Get timely updates from your favorite products.</Desc>
 
       <InputContainer>

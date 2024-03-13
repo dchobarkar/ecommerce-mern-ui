@@ -2,26 +2,27 @@ import { useState } from "react";
 import styled from "styled-components";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 
+import { mobile } from "../responsive";
 import { sliderItems } from "../data";
 
 const Container = styled.div`
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
-  position: relative;
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
-  width: 50px;
-  height: 50px;
   position: absolute;
   top: 0;
   bottom: 0;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff7f7;
   border-radius: 50%;
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
@@ -29,6 +30,7 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
+  background-color: #fff7f7;
 `;
 
 const Wrapper = styled.div`
