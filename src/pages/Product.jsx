@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
 import { Add, Remove } from "@material-ui/icons";
 
 import Announcement from "../components/Announcement";
@@ -8,6 +9,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { publicRequest } from "../requestMethods";
+import { addProduct } from "../redux/cartRedux";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -124,8 +126,8 @@ const Product = () => {
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState("");
   const [size, setSize] = useState("");
+  const dispatch = useDispatch();
   const location = useLocation();
-
   const id = location.pathname.split("/")[2];
 
   useEffect(() => {
@@ -143,7 +145,9 @@ const Product = () => {
     else setQuantity(quantity + 1);
   };
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    dispatch(addProduct({ ...product, quantity, color, size }));
+  };
 
   return (
     <Container>
