@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Ecommerce MERN UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This repository contains the frontend UI for an e-commerce application built using the MERN stack. Leveraging React, it provides a dynamic and responsive user interface for browsing products, managing shopping carts, and processing orders, all integrated seamlessly with the `ecommerce-mern-api` backend.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Product Browsing**: Users can view products, filter by categories, and search for specific items.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Shopping Cart**: Supports adding, updating, and removing products from the cart.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Checkout Process**: Integrates with Stripe for secure payment processing.
 
-### `npm test`
+- **User Authentication**: Includes login and registration functionality for customers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Responsive Design**: Ensures a smooth shopping experience across all devices.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React.js**: For building the dynamic user interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Redux**: For state management across the React app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Stripe**: For handling secure payment transactions.
 
-### `npm run eject`
+- **Axios**: For making HTTP requests to the backend API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To install this project, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    $ git clone https://github.com/dchobarkar/ecommerce-mern-ui.git
+    $ cd ecommerce-mern-ui
+    $ npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Set up your `.env` files in both the backend and frontend directories to include necessary environment variables such as database URI, JWT secret, etc.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the application, use the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    $ npm run dev
 
-### Code Splitting
+Navigate to `http://localhost:3000` in your browser to use the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions to this project are welcome. Follow these steps to contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Distributed under the MIT License. See `LICENSE` file for more information.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Darshan Chobarkar - [@dchobarkar](https://www.linkedin.com/in/dchobarkar/) - [@barbatos\_\_08](https://twitter.com/barbatos__08) - contact@darshanwebdev.com
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/dchobarkar/ecommerce-mern-ui](https://github.com/dchobarkar/ecommerce-mern-ui)

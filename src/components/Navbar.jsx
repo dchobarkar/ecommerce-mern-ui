@@ -86,7 +86,7 @@ const Navbar = () => {
         </Left>
 
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo>DarshanWebDev</Logo>
         </Center>
 
         <Right>
